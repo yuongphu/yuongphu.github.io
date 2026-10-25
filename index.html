@@ -34,12 +34,13 @@
     .site-nav a{font-size:10px;letter-spacing:.25em;font-weight:600;transition:color .2s ease}
     .site-nav a:hover{color:var(--accent)}
     .nav-line{height:1px;width:30px;background:#81919c;display:block;margin-left:-13px}
-    .hero{position:relative;display:grid;grid-template-columns:43.5% 56.5%;align-items:center;min-height:clamp(505px,52vw,730px);padding:0 clamp(30px,5.25vw,88px) 30px;gap:0;background:radial-gradient(ellipse 38% 50% at 86% 28%,#F1EEE7 0%,transparent 78%),linear-gradient(105deg,#F6F3ED 0%,#F4F3EF 100%)}
+    .hero{position:relative;display:grid;grid-template-columns:43.5% 56.5%;align-items:center;min-height:clamp(505px,52vw,730px);padding:0 clamp(30px,5.25vw,88px) 30px;gap:0;background:radial-gradient(ellipse 41% 54% at 84% 22%,#E8EAE8 0%,transparent 83%),linear-gradient(105deg,#F6F3ED 0%,#F4F3EF 100%)}
     .hero-mark{display:flex;align-items:center;justify-content:flex-start;max-width:100%;height:100%;padding-right:10px}
     .hero-mark img{display:block;max-width:95%;width:auto;height:min(48vw,667px);filter:drop-shadow(4px 9px 20px rgba(35,60,79,.045));transform:translate(-11px,-3px)}
     .hero-content{align-self:center;padding:10px 27px 50px 10px;max-width:830px;z-index:1}
     .eyebrow{font-size:11px;color:#588aad;letter-spacing:.345em;font-weight:600;text-transform:uppercase;line-height:1.4;margin-bottom:26px}
     h1{font-family:var(--display);font-weight:400;font-size:clamp(56px,6.05vw,108px);line-height:.905;letter-spacing:-.043em;margin:0 0 28px;color:#18252c}
+    h1,.about-thesis{font-kerning:normal;font-variant-ligatures:common-ligatures discretionary-ligatures contextual;font-feature-settings:"kern" 1,"liga" 1,"clig" 1,"dlig" 1;text-rendering:optimizeLegibility}
     h1 span{display:block}
     h1 .color{color:#5084aa;margin-top:10px}
     .hero-desc{font-size:clamp(14px,1.4vw,18px);line-height:1.48;max-width:510px;margin:0 0 29px;color:#253440;font-weight:400}
@@ -96,7 +97,7 @@
     .work-name{font-size:clamp(17px,1.75vw,24px);font-weight:450;letter-spacing:-.045em;line-height:1.2;margin:0}
     .work-meta .arrow{font-size:28px;font-weight:300;line-height:1;transition:transform .25s ease}
     .work-card:hover .arrow{transform:translateX(5px)}
-    /* About — editorial, warm and professional; sans-serif typography throughout. */
+    /* About — echo the editorial hero serif in the one signature statement; the rest remains sans-serif. */
     .about{background:#F4F3EF;border-top:1px solid var(--divider);border-bottom:1px solid var(--divider);padding:clamp(67px,7vw,113px) clamp(30px,5.25vw,88px) clamp(63px,6vw,96px)}
     .about-rule{display:flex;align-items:center;gap:22px;margin-bottom:clamp(44px,5vw,70px)}
     .about-rule .small-label{margin:0;white-space:nowrap}
@@ -104,8 +105,8 @@
     .about-rule .rule-index{color:#748997;letter-spacing:.16em;font-size:10px;white-space:nowrap}
     .small-label{font-size:10px;letter-spacing:.25em;text-transform:uppercase;font-weight:550;color:#66859a}
     .about-layout{display:grid;grid-template-columns:minmax(0,43%) minmax(0,57%);gap:clamp(45px,7vw,120px);align-items:start}
-    .about-thesis{font-weight:500;letter-spacing:-.065em;font-size:clamp(37px,4.3vw,70px);line-height:1.04;max-width:540px;margin:0;color:#20303b}
-    .about-thesis .blue{display:block;color:#5888aa}
+    .about-thesis{font-family:var(--display);font-weight:400;letter-spacing:-.043em;font-size:clamp(43px,4.15vw,72px);line-height:1.01;max-width:540px;margin:0;color:#18252c}
+    .about-thesis .blue{display:block;color:#5084aa;margin-top:12px}
     .about-copy{max-width:655px;min-width:0}
     .about-intro{font-size:clamp(21px,2.15vw,32px);line-height:1.32;letter-spacing:-.036em;color:#20313b;font-weight:450;margin:0 0 25px}
     .about-body{font-size:clamp(13px,1.03vw,16px);line-height:1.8;color:#50616a;margin:0 0 17px;max-width:600px}
@@ -124,7 +125,8 @@
     .footer-brand{display:flex;align-items:center;gap:16px}
     .footer-brand .icon-logo{width:42px;height:54px;object-fit:contain}
     .footer-brand img:last-child{display:block;width:141px;max-width:100%;height:auto}
-    .footer-sub{font-size:8px;letter-spacing:.24em;margin-top:4px;margin-left:7px;color:#647581}
+    .footer-brand > div{width:141px;max-width:100%}
+    .footer-sub{font-size:8px;letter-spacing:.24em;margin-top:4px;margin-left:0;width:100%;text-align:center;color:#647581}
     .footer-tag{font-size:10px;letter-spacing:.27em;color:#7d91a0;white-space:nowrap}
     .footer-links{display:flex;gap:24px;align-items:center;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#1b2a32}
     .footer-links a:hover{color:var(--accent)}
@@ -153,7 +155,7 @@
       .feature{display:flex;flex-direction:column}.feature-copy{min-height:390px;padding:38px 25px 35px;gap:34px}.feature h2{font-size:56px}.feature p{font-size:14px}.feature-actions{gap:25px}.feature-stage{min-height:330px;padding:34px 20px}.feature-board{width:83%}.feature-board img{min-height:140px}.feature-source{bottom:15px;right:18px;font-size:7px}
       .gallery{padding:60px 22px 68px}.gallery-head{gap:15px}.gallery-head h2{font-size:11px;letter-spacing:.17em}.gallery-head a{font-size:9px;gap:10px}.work-grid{grid-template-columns:1fr;gap:44px}.card-photo{aspect-ratio:1.47}.work-meta{padding-top:18px}.work-name{font-size:21px}
       .about{padding:61px 22px 57px}.about-rule{margin-bottom:32px;gap:12px}.about-rule .small-label{font-size:9px}.about-rule .rule-index{font-size:9px}
-      .about-layout{grid-template-columns:1fr;gap:33px}.about-thesis{font-size:clamp(40px,10.5vw,58px);max-width:430px}
+      .about-layout{grid-template-columns:1fr;gap:33px}.about-thesis{font-size:clamp(43px,10.5vw,59px);max-width:430px}
       .about-intro{font-size:22px;line-height:1.36}.about-body{font-size:13px;line-height:1.78}.about-cta{gap:23px}
       .about-credentials{margin-top:51px;grid-template-columns:1fr}.credential,.credential+.credential{padding:20px 0 21px;border-left:0;border-bottom:1px solid #c9d3d5}
       .credential-index{margin-bottom:8px}.credential-heading{font-size:18px;margin-bottom:6px}.credential-description{max-width:unset}
@@ -180,7 +182,7 @@
       <div class="hero-content">
         <div class="eyebrow">Independent graphic designer</div>
         <h1 id="hero-title"><span>Designing with<br>structure.</span><span class="color">Creating with<br>character.</span></h1>
-        <p class="hero-desc">Publication design, visual identity, and thoughtful graphic systems where creativity meets precision.</p>
+        <p class="hero-desc">I turn complex ideas into clear, compelling design—with personality in the details and care in the execution.</p>
         <a class="arrow-link" href="#work">Explore my work <span class="arrow" aria-hidden="true">⟶</span></a>
       </div>
       <div class="hero-pages" aria-hidden="true"><i class="top-rule"></i><span class="mid-label">01</span><i class="bottom-rule"></i><span class="bottom-label">04</span></div>
@@ -188,16 +190,16 @@
     <section class="feature" id="work" aria-labelledby="feature-title">
       <div class="feature-copy">
         <div class="kicker"><b>01</b> FEATURED WORK</div>
-        <div><h2 id="feature-title">Level D<br>Science</h2><p>Clear, carefully structured science materials that make complex information easier to explore.</p></div>
+        <div><h2 id="feature-title">Level D<br>Science</h2><p>Making science easier to explore through clear, engaging layouts for young learners.</p></div>
         <div class="feature-actions"><button class="arrow-link open-project" type="button" data-index="0" style="border:0;background:none;padding:0;color:inherit;cursor:pointer">View project <span class="arrow" aria-hidden="true">⟶</span></button><div class="feature-count">01&nbsp;&nbsp;&nbsp;&nbsp; 02&nbsp;&nbsp;&nbsp;&nbsp; 03</div></div>
       </div>
       <div class="feature-stage">
-        <figure class="feature-board"><img src="https://raw.githubusercontent.com/yuongphu/myportfolio/main/science.jpg" alt="Original Level D Science design boards from Yuong Phu's portfolio" loading="eager"><figcaption><span>Level D Science · selected original artwork</span><span>01 / 04</span></figcaption></figure>
-        <span class="feature-source">Current project artwork</span>
+        <figure class="feature-board"><img src="https://raw.githubusercontent.com/yuongphu/myportfolio/main/science.jpg" alt="Original Level D Science design boards from Yuong Phu's portfolio" loading="eager"><figcaption><span>Level D Science · Selected layouts</span><span>01 / 04</span></figcaption></figure>
+        <span class="feature-source">Publication design</span>
       </div>
     </section>
     <section class="gallery" aria-labelledby="gallery-title">
-      <div class="gallery-head"><h2 id="gallery-title">Selected work</h2><div class="line" aria-hidden="true"></div><a href="#contact">All inquiries <span aria-hidden="true">⟶</span></a></div>
+      <div class="gallery-head"><h2 id="gallery-title">Selected work</h2><div class="line" aria-hidden="true"></div><a href="#contact">Let's connect <span aria-hidden="true">⟶</span></a></div>
       <div class="work-grid">
         <button class="work-card open-project" type="button" data-index="1" style="padding:0;border:0;background:none;color:inherit;text-align:left;width:100%;font:inherit">
           <div class="card-photo empire"><span class="image-mat" aria-hidden="true"></span><img src="https://raw.githubusercontent.com/yuongphu/myportfolio/main/empire.svg" alt="Original Empire Rolloffs visual identity artwork" loading="lazy"></div>
@@ -218,9 +220,9 @@
       <div class="about-layout">
         <p class="about-thesis">The idea matters.<span class="blue">So does the execution.</span></p>
         <div class="about-copy">
-          <p class="about-intro">I'm Yuong — a graphic designer and production lead who believes good design should have both personality and purpose.</p>
-          <p class="about-body">For nearly a decade, I've worked across educational publishing, visual identity, and production, translating complex information into clear, thoughtfully crafted design.</p>
-          <p class="about-body">My work doesn't stop at the concept. From precise layouts and prepress to quality checks, vendor coordination, and managing updates and reprints for a library of 100+ books, I care about the details that make a design work in the real world.</p>
+          <p class="about-intro">I'm Yuong. I work across graphic design and production, bringing creative ideas to life without losing sight of the details that make them work.</p>
+          <p class="about-body">For nearly a decade, I've worked in educational publishing, visual identity, and production. I enjoy turning information-heavy projects into something clear, useful, and engaging.</p>
+          <p class="about-body">I'm just as invested in how a project comes together as I am in the initial idea—from refining layouts and preparing files for print to checking quality, coordinating with vendors, and managing updates and reprints across a library of 100+ books.</p>
           <div class="about-cta">
             <a class="arrow-link" href="mailto:hello@yuongphu.com">Get in touch <span class="arrow" aria-hidden="true">⟶</span></a>
             <a class="quiet-link" href="https://www.linkedin.com/in/yuongphu/" target="_blank" rel="noopener noreferrer">Experience on LinkedIn ↗</a>
@@ -228,9 +230,9 @@
         </div>
       </div>
       <div class="about-credentials" aria-label="Areas of expertise">
-        <div class="credential"><span class="credential-index">01 /</span><h3 class="credential-heading">Publication design</h3><p class="credential-description">Clear editorial systems for books, learning materials, and information-rich content.</p></div>
-        <div class="credential"><span class="credential-index">02 /</span><h3 class="credential-heading">Visual identity</h3><p class="credential-description">Distinctive design that connects a brand's character with a consistent visual language.</p></div>
-        <div class="credential"><span class="credential-index">03 /</span><h3 class="credential-heading">Production &amp; prepress</h3><p class="credential-description">The technical precision, quality control, and coordination that carry ideas into print.</p></div>
+        <div class="credential"><span class="credential-index">01 /</span><h3 class="credential-heading">Publication design</h3><p class="credential-description">I make information-heavy pages easier to navigate, understand, and enjoy.</p></div>
+        <div class="credential"><span class="credential-index">02 /</span><h3 class="credential-heading">Visual identity</h3><p class="credential-description">Identity work that feels distinctive and stays consistent wherever it appears.</p></div>
+        <div class="credential"><span class="credential-index">03 /</span><h3 class="credential-heading">Production &amp; prepress</h3><p class="credential-description">Careful files, thoughtful handoffs, and the checks that make design work beyond the screen.</p></div>
       </div>
     </section>
   </main>
